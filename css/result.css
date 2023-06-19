@@ -172,7 +172,7 @@ input[type=radio]:checked {
 }
 /*result*/
 .result-title {
-    font-family: 'Zen Maru Gothic', sans-serif;
+    /* font-family: 'Zen Maru Gothic', sans-serif; */
     color: #ff5eb8;
     font-size: 20px;
     font-weight: 600;
@@ -186,7 +186,7 @@ input[type=radio]:checked {
 }
 
 .dash{
-    border-top: 3px solid #ff5eb8;
+    border-top: 2px solid #ff5eb8;
     justify-content: center;
     margin: 3%;
     width: 34%;
