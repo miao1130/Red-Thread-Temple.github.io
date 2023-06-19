@@ -1,0 +1,132 @@
+
+body {
+    align-items: center;
+    background: #000;
+    display: grid;
+    // font-family: 'NEON LIGHTS', 'Text Me One', sans-serif;
+    height: auto;
+    justify-items: center;
+    margin: 10em;
+    overflow: hidden;
+    
+    &::before,
+    &::after {
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    
+    &::before {
+      background: repeating-linear-gradient(0deg,
+                    rgba(224, 183, 217, 0.082),
+                    rgba(255, 83, 232, 0.05) 2px,
+                    rgba(0, 0, 0, .2) 2px,
+                    rgba(0, 0, 0, .2) 4px);
+      z-index: -5;
+    }
+    
+    &::after {
+      background-image: url("/Assets/Temple4.jpg");
+      background-size: cover;
+      filter: grayscale(50%) contrast(1.4);
+      opacity: .15;
+      z-index: -6;
+    }
+  }
+
+//   #EAlogo{
+//     text-align: center;
+//     padding-top: 5px;
+// }
+
+  div.one {
+    animation: neon ease-in .2s infinite;
+    color: #ffcadf;
+    font-family: 'Yuji Syuku', serif;
+    font-size: 6.5vw;
+    font-weight: 500;
+    letter-spacing: 2.5vw;
+    text-shadow: 0 0 .5vw #f25995, 
+                 .05vw .05vw .5vw #f25995,
+                 -.05vw -.05vw .5vw rgb(242,89,149),
+                 .1vw .1vw 1vw rgba(242,89,149,.8),
+                 -.1vw -.1vw 1vw rgba(242,89,149,.8)
+      ;
+    
+    &::after {
+      animation: .8s blink step-end infinite;
+      color: #fff;
+      content: '';
+      font-size: 1.25em;
+      position: relative;
+      bottom: -5px;
+    }
+  }
+  div.two {
+    animation: neon ease-in .2s infinite;
+    color: #ffffff;
+    font-family: 'Klee One', cursive;
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: 0.6vw;
+    line-height:2;
+    text-shadow: 0 0 .5vw #f25995, 
+                 .05vw .05vw .5vw #f25995,
+                 -.05vw -.05vw .5vw rgb(242,89,149),
+                 .1vw .1vw 1vw rgba(242,89,149,.8),
+                 -.1vw -.1vw 1vw rgba(242,89,149,.8);
+    word-spacing: -2vw;
+    
+    &::after {
+      animation: .8s blink step-end infinite;
+      color: #fff;
+      content: '';
+      font-size: 1.25em;
+      position: relative;
+      bottom: -5px;
+    }
+  }
+  
+  .btn{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    width: 200px;
+    background: #f25995;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 16px;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+  }
+  .btn:hover, #msform .btn:focus {
+    background: #ffffff;
+    color: #f25995;
+    box-shadow: 0 0 .8vw #ffffff, 
+    .05vw .05vw .5vw #ffbcd7,
+    -.05vw -.05vw .5vw rgb(242,89,149),
+    .1vw .1vw 1vw rgba(242,89,149,.8),
+    -.1vw -.1vw 1vw rgba(242,89,149,.8)
+}
+
+  @keyframes neon {
+    from { opacity: 1; }
+    to { opacity: .9; }
+  }
+  
+  @keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+//   .container{
+//     width: 100％;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+// }
