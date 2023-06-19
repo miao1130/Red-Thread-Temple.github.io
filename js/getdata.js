@@ -5,6 +5,7 @@ var userlist=[];
       var loverlist=[];
       var futurelist=[];
       var pastlist=[];
+      var realnamelist=[];
       var querystring;
       function getusers(){
         jQuery.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1YfzmNIedxcZi6Bh5C7gh1SDX7dl7vQcz15jRcW6l5Kc/values/Sheet1/?key=AIzaSyDmVUZvfygBY5MsTHtlrwcEUL85Qcwyj1E", function (data) {
@@ -17,6 +18,7 @@ var userlist=[];
                 loverlist[i-1]=sheetData[i][3];
                 futurelist[i-1]=sheetData[i][4];
                 pastlist[i-1]=sheetData[i][5];
+                realnamelist[i-1]=sheetData[i][6];
             }
             
             whenloaded();
@@ -32,7 +34,7 @@ $( document ).ready(function() {
 function whenloaded(){
     var index=namelist.findIndex(checkName);
     if(index!=-1){
-        document.getElementById("resultname").innerHTML+=(namelist[index])+"的正緣桃花";
+        document.getElementById("resultname").innerHTML+=(realnamelist[index])+"的正緣桃花";
         document.getElementById("picture").innerHTML+="<img src="+(piclist[index])+" width="+""+"80%"+""+">";
         document.getElementById("lover").innerHTML+=(loverlist[index]);
         document.getElementById("content").innerHTML+=(contentlist[index]);
