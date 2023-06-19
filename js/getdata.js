@@ -35,7 +35,7 @@ function whenloaded(){
     var index=namelist.findIndex(checkName);
     if(index!=-1){
         document.getElementById("result-no").style.display = 'none';
-        document.getElementById("resultname").innerHTML+=(realnamelist[index])+"的正緣桃花";
+        document.getElementById("resultname").innerHTML+=(realnamelist[index])+"的正緣桃花來了";
         document.getElementById("picture").innerHTML+="<img src="+(piclist[index])+" width="+""+"80%"+""+">";
         document.getElementById("lover").innerHTML+=(loverlist[index]);
         document.getElementById("content").innerHTML+=(contentlist[index]);
