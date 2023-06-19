@@ -1,7 +1,7 @@
 
 body {
     align-items: center;
-    background: #000;
+    background: #000000;
     display: grid;
     // font-family: 'NEON LIGHTS', 'Text Me One', sans-serif;
     height: auto;
@@ -29,7 +29,7 @@ body {
     }
     
     &::after {
-      background-image: url("./Assets/Temple4.jpg");
+      background-image: url("../Assets/Temple4.jpg");
       background-size: cover;
       filter: grayscale(50%) contrast(1.4);
       opacity: .15;
