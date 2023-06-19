@@ -29,7 +29,7 @@ body {
     }
     
     &::after {
-      background-image: url("Assets/Temple4.jpg");
+      background-image: url("/Assets/Temple4.jpg");
       background-size: cover;
       filter: grayscale(50%) contrast(1.4);
       opacity: .15;

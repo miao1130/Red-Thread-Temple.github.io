@@ -47,7 +47,7 @@ body::before{
     filter: grayscale(100%) contrast(1.5);
 }
 body::after{
-    background-image: url("Assets/Temple.jpg");
+    background-image: url("/Assets/Temple.jpg");
     background-size: cover;
     filter: grayscale(100%) contrast(1.5);
     opacity: .2;
