@@ -186,8 +186,16 @@ input[type=radio]:checked {
     margin: 5px 5px;
 }
 
+#topass {
+    background: #afafaf;
+}
+
 .btn:hover, #msform .btn:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #ff3fbf;
+}
+
+#topass:hover, #msform #topass:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #b3b3b3;
 }
 /* 
 #msform .action-button-previous {

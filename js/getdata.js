@@ -12,13 +12,13 @@ var userlist=[];
             
         var sheetData = data.values;
             for (i = 1; i < sheetData.length; i++) {
-                namelist[i-1]=sheetData[i][0]; 		
-                piclist[i-1]=sheetData[i][1]; 
-                contentlist[i-1]=sheetData[i][2];
-                loverlist[i-1]=sheetData[i][3];
-                futurelist[i-1]=sheetData[i][4];
-                pastlist[i-1]=sheetData[i][5];
-                realnamelist[i-1]=sheetData[i][6];
+                namelist[i-1]=sheetData[i][0];
+                realnamelist[i-1]=sheetData[i][1];
+                piclist[i-1]=sheetData[i][2]; 
+                contentlist[i-1]=sheetData[i][3];
+                loverlist[i-1]=sheetData[i][4];
+                futurelist[i-1]=sheetData[i][5];
+                pastlist[i-1]=sheetData[i][6];
             }
             
             whenloaded();
@@ -34,6 +34,7 @@ $( document ).ready(function() {
 function whenloaded(){
     var index=namelist.findIndex(checkName);
     if(index!=-1){
+        document.getElementById("result-no").style.display = 'none';
         document.getElementById("resultname").innerHTML+=(realnamelist[index])+"的正緣桃花";
         document.getElementById("picture").innerHTML+="<img src="+(piclist[index])+" width="+""+"80%"+""+">";
         document.getElementById("lover").innerHTML+=(loverlist[index]);
@@ -43,6 +44,7 @@ function whenloaded(){
         console.log(contentlist[index]);
     }
     else{
+        document.getElementById("result-yes").style.display = 'none';
         console.log("name does not exist");
     }
 }
